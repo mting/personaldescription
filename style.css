@@ -1,7 +1,7 @@
 
 /* reset */
 
-ul, li,  h1, h2, p {
+ul, li,  h1, h2, h3, p {
 	
 	/* reset	*/
 	margin: 0;
@@ -73,23 +73,27 @@ section {
   padding-top: 100px;
 }
 
-section:nth-child(even) {
-	background-color: #96FCD8;
-}
+
 
 section#slider {
   background: url(images/miranda.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
-
+  
+  opacity: 0.5;
 }
-
+section#about {
+	background-color: #96FCD8;
+}
 
 #about {
 	padding: 0 20%;
 }
 
+section#skills {
+  background-color: #69B29C;
+  text-align: center;
+}
 
  /*contact   */
 
@@ -104,6 +108,11 @@ section#slider {
 
 .social img {
   width: 60%;
+  opacity: 0.6;
+}
+
+.social img:hover {
+  opacity: 1;
 }
 
 #contact p em {
@@ -128,6 +137,10 @@ header h1 {
 	font-size: 48px;
 }
 
+header h1 a {
+  text-decoration: none;
+}
+
 header h2 {
   font-size: 28px;
 }
@@ -140,8 +153,8 @@ header h2 {
 
 #contact p {
   font-size: 28px;
-  line-height: 2;
-  margin-bottom: 30px;
+  line-height: 1.5;
+  margin-bottom: 50px;
 }
 
 #contact address p {
@@ -160,10 +173,31 @@ section h2 {
   text-transform: uppercase;
 }
 
+#slider h3 {
+  color: #FCFC00;
+  font-size: 120px;
+  margin-bottom: 30px;
+}
+
+#skills h3 {
+  font-size: 90px;
+  color: #96FCD8;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 980px) {
     #about p {
     font-size: 42px;
     line-height: 1.5;
+  }
+  
+  #slider h3 {
+    font-size: 90px;
+  }
+  
+   #skills h3 {
+    font-size: 70px;
   }
 }
 
@@ -177,6 +211,12 @@ section h2 {
   #contact div{
     max-width: 400px;
 }
+   #slider h3 {
+    font-size: 90px;
+  }
+  #skills h3 {
+    font-size: 52px;
+  }
 }
 
 
