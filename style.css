@@ -76,11 +76,7 @@ section {
 section#slider {
   background: url(images/miranda.jpg) no-repeat;
   background-size: cover;
-<<<<<<< HEAD
 	background-position: center;
-=======
-  background-position: center;
->>>>>>> eb9b7006ca543935c4469eff177179cb80783c9a
   
   opacity: 0.5;
 }
