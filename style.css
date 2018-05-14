@@ -80,22 +80,22 @@ section:nth-child(even) {
 section#slider {
   background: url(images/miranda.jpg) no-repeat;
   background-size: cover;
-  
+  background-position: center;
   opacity: 0.4;
 
 }
 
-section div {
-  max-width: 500px;
-}
 
-#about div {
-	max-width: 900px;
+#about {
+	padding: 0 20%;
 }
 
 
  /*contact   */
 
+#contact div{
+    max-width: 500px;
+}
 
 #contact ul li {
 	display: inline-block; 
@@ -107,10 +107,8 @@ section div {
 }
 
 #contact p em {
-  color: #E86FED;
+  color: #f40cee;
 }
-
-
 
 footer {
   background-color: yellow;
@@ -137,6 +135,7 @@ header h2 {
 #about p {
   font-size: 60px;
   line-height: 1.5;
+  text-align: center;
 }
 
 #contact p {
@@ -152,7 +151,7 @@ header h2 {
 }
 
 h2 {
-  color: #E86FED;
+  color: #f40cee;
   text-align: center;
 }
 
@@ -160,4 +159,24 @@ section h2 {
   font-size: 32px;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 980px) {
+    #about p {
+    font-size: 42px;
+    line-height: 1.5;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+    #about p {
+    font-size: 38px;
+    line-height: 1.5;
+  }
+  
+  #contact div{
+    max-width: 400px;
+}
+}
+
 
